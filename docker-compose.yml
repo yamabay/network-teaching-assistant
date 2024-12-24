@@ -1,0 +1,9 @@
+services:
+  ollama-backend:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./files:/root/.ollama
+    restart: always
+    container_name: ollama-backend1
